@@ -215,13 +215,12 @@ ul,
 ol {
     padding: 0;
     margin-bottom: .7em;
-    list-style-type: circle;
+    list-style-type: none;
 }
 
 ul li,
 ol li {
-    margin-left: 1.15em;
-    padding-left: .5em;
+    margin-left: -0.3em;
 }
 
 strong {
