@@ -1427,8 +1427,8 @@
         padding: 1em 0;
         font-family: 'Montserrat', sans-serif;
     }
-
     /* Для каждого проекта */
+    
     .menu {
         color: white;
         background-color: #DB9917;
@@ -1441,4 +1441,20 @@
     
     table.langs>td {
         padding: 0;
+    }
+    /* projects.html */
+    
+    ul.horizontal>li {
+        display: inline;
+        list-style-type: none;
+        padding-right: 20px;
+    }
+
+    .project {
+        text-align: center;
+    }
+
+    .project > .description {
+        padding-top: 10px;
+        font-style: oblique;
     }
