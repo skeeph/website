@@ -19,6 +19,8 @@
 
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600,700,800" rel=stylesheet type="text/css">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.spoiler.min.js"></script>
     <title>Khabib Murtuzaaliev</title>
 </head>
 
@@ -45,15 +47,22 @@
     <div class="section work menu">
         <h1>Menu Planner</h1>
         <p>
-            <a href="http://skeeph.github.io/menu/" target="_blank">Visit Site</a>
+            <a href="#" onclick="return false;" class="spoiler" data-spoiler-link="1">Show more</a>
         </p>
+    </div>
+    <div class="spoiler-content" data-spoiler-link="1">
+        Technologies
+        <blockquote>"...Every day the same thing: Variety. I want something different! Fix me hasenpfeffer right away!" That honorable, royal, majestic, graciousness</blockquote>
     </div>
 
     <div class="section work maps">
         <h1>Historical maps</h1>
         <p>
-            <a href="http://skeeph.github.io/" target="_blank">Visit Site</a>
+            <a href="#" onclick="return false;" class="spoiler" data-spoiler-link="2">Show more</a>
         </p>
+    </div>
+    <div class="spoiler-content" data-spoiler-link="2">
+        <blockquote>"...Every day the same thing: Variety. I want something different! Fix me hasenpfeffer right away!" That honorable, royal, majestic, graciousness</blockquote>
     </div>
 
     <footer class="footer">
@@ -64,6 +73,16 @@
             <a class="footer__links-container--link" href="https://twitter.com/skeeph" target="_blank"><img src="./img/twitter.png" /></a>
         </div>
     </footer>
+
+    <script>
+        jQuery(function() {
+            "use strict";
+            // Activate jQuery Spoiler
+            jQuery(".spoiler").spoiler({
+                includePadding: false
+            });
+        });
+    </script>
     </div>
 </body>
 
