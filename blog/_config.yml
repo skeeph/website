@@ -21,6 +21,8 @@ url: "https://khabib.me" # the base hostname & protocol for your site, e.g. http
 twitter_username: skeeph
 github_username:  skeeph
 google_analytics: UA-107006920-1
+disqus:
+    shortname: skeeph
 
 # Build settings
 markdown: kramdown
